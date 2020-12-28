@@ -1,0 +1,7 @@
+Recurrences
+15) Case 3 
+    2^n = BigOmega(n^(log1+e)
+        = BigOmega(n^e)
+
+75) Case 1
+    (n^3)/log(n) = O(n^(3-e)) Master Theorem cannot be used

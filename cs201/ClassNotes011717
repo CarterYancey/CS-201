@@ -1,0 +1,23 @@
+function f(x,n)
+ if (x < n)
+  print(x);
+  f(x+pow(n, 0.5), n) //runs ins sqrt(n) time and sqrt(n) space
+
+
+(logn)^a  //polylogarithmic
+n^b //polynomial
+(logn)^a = o(n^b) 
+
+//logn is essentially 1
+logn = o(n)
+logn = o(n^.5)
+logn = o(n^.0000001)
+
+
+log(logn) = o(logn)
+log*n is log recursively until you get to one
+
+1.00001^n = w(n^5)
+
+
+Submit password is editllor

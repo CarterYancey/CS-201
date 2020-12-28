@@ -1,0 +1,8 @@
+0: "one"-B("one"-B)-
+1: "hello"-R("one"-B)-l "two"-R("one"-B)-r
+2: "four"-B("hello"-R)-l "kolme"-B("hello"-R)-r ="three"-B("two"-R)-l "yksi"-B("two"-R)-r
+3: ="five"-R("four"-B)-l ="hei"-R("four"-B)-r ="kaksi"-R("kolme"-B)-l ="nelja"-R("kolme"-B)-r ="viisi"-R("yksi"-B)-l
+Words/Phrases: 12
+Nodes: 12
+Minimum depth: 3
+Maximum depth: 4

@@ -1,0 +1,9 @@
+/home/carter/Desktop/cs201/assign0
+Tue Jan 31 14:05:52 CST 2017
+assign0-tests		 integer.o  sll.o	test-integer.c	test-stack
+cdyancey@crimson.ua.edu  Makefile   stack.c	test-queue	test-stack.c
+dll.c			 queue.c    stack.h	test-queue.c	test-stack.o
+dll.h			 queue.h    stack.o	test-queue.o	WORKING
+dll.o			 queue.o    test-dll	test-sll
+integer.c		 sll.c	    test-dll.c	test-sll.c
+integer.h		 sll.h	    test-dll.o	test-sll.o

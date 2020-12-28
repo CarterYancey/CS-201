@@ -1,0 +1,7 @@
+0: " time for "-B(" time for "-B)-
+1: " all good students "-B(" time for "-B)-l "now is the "-B(" time for "-B)-r
+2: =" tests "-R(" all good students "-B)-r ="to pass their"-R("now is the "-B)-r
+Words/Phrases: 5
+Nodes: 5
+Minimum depth: 2
+Maximum depth: 3

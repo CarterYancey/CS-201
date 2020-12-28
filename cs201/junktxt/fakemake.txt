@@ -1,0 +1,35 @@
+
+	./bstrees -v sampleCorpus1.txt sampleCommands1.txt myOutput1.txt
+	./bstrees -v sampleCorpus2.txt sampleCommands2.txt myOutput2.txt
+	./bstrees -v sampleCorpus3.txt sampleCommands3.txt myOutput3.txt
+	./bstrees -v sampleCorpus4.txt sampleCommands4.txt myOutput4.txt
+	./bstrees -v sampleCorpus4.txt sampleCommands5.txt myOutput9.txt
+	./bstrees -r sampleCorpus1.txt sampleCommands1.txt myOutput5.txt
+	./bstrees -r sampleCorpus2.txt sampleCommands2.txt myOutput6.txt
+	./bstrees -r sampleCorpus3.txt sampleCommands3.txt myOutput7.txt
+	./bstrees -r sampleCorpus4.txt sampleCommands4.txt myOutput8.txt
+	./bstrees -r sampleCorpus4.txt sampleCommands5.txt myOutput10.txt
+
+showMyOutput :
+	cat myOutput1.txt
+	cat myOutput2.txt
+	cat myOutput3.txt
+	cat myOutput4.txt
+	cat myOutput5.txt
+	cat myOutput6.txt
+	cat myOutput7.txt
+	cat myOutput8.txt
+	cat myOutput9.txt
+	cat myOutput10.txt
+
+showOutput :
+	cat out1.txt
+	cat out2.txt
+	cat out3.txt
+	cat out4.txt
+	cat out5.txt
+	cat out6.txt
+	cat out7.txt
+	cat out8.txt
+	cat out9.txt
+	cat out10.txt

@@ -1,0 +1,10 @@
+0: "one"-B("one"-B)-
+1: "hello"-R("one"-B)-l "viisi"-R("one"-B)-r
+2: "f"-78-B("hello"-R)-l "kolme"-B("hello"-R)-r "two"-B("viisi"-R)-l "y"-74-B("viisi"-R)-r
+3: "d"-86-R("f"-78-B)-l "four"-R("f"-78-B)-r "k"-84-R("kolme"-B)-l "m"-78-R("kolme"-B)-r "s"-74-R("two"-B)-l "v"-69-B("two"-B)-r "w"-69-B("y"-74-B)-l "yksi"-B("y"-74-B)-r
+4: "b"-87-B("d"-86-R)-l ="e"-75-B("d"-86-R)-r ="five"-B("four"-R)-l "h"-69-B("four"-R)-r "i"-81-B("k"-84-R)-l ="kaksi"-B("k"-84-R)-r ="l"-72-B("m"-78-R)-l "nelja"-B("m"-78-R)-r "q"-73-B("s"-74-R)-l "three"-B("s"-74-R)-r ="u"-76-R("v"-69-B)-l ="x"-92-R("w"-69-B)-r ="z"-77-R("yksi"-B)-r
+5: ="a"-84-R("b"-87-B)-l ="c"-67-R("b"-87-B)-r ="g"-66-R("h"-69-B)-l ="hei"-R("h"-69-B)-r ="j"-70-R("i"-81-B)-r ="n"-88-R("nelja"-B)-l ="o"-63-R("nelja"-B)-r ="p"-85-R("q"-73-B)-l ="r"-78-R("q"-73-B)-r ="t"-85-R("three"-B)-l
+Words/Phrases: 2012
+Nodes: 38
+Minimum depth: 4
+Maximum depth: 6

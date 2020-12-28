@@ -1,0 +1,11 @@
+0: "hei"("hei")-
+1: "four"("hei")-l "hello"("hei")-r
+2: ="five"("four")-l "yksi"("hello")-r
+3: "one"("yksi")-l
+4: "kaksi"("one")-l "two"("one")-r
+5: "kolme"("kaksi")-r ="three"("two")-l ="viisi"("two")-r
+6: ="nelja"("kolme")-r
+Words/Phrases: 12
+Nodes: 12
+Minimum depth: 2
+Maximum depth: 7

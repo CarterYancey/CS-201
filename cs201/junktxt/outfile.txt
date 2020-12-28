@@ -1,0 +1,22 @@
+0: "celtic zzzs"("celtic zzzs")- 
+1: "bad asses"("celtic zzzs")-l "elephant zz's"("celtic zzzs")-r 
+2: ="ass fuck"("bad asses")-l ="dog eats bone"("elephant zz's")-l "fog is thick"("elephant zz's")-r 
+3: "gog is real"("fog is thick")-r 
+4: "hog is mean"("gog is real")-r 
+5: ="idiot abroad"("hog is mean")-r 
+
+Nodes: 9
+Words/Phrases: 9
+Minimum depth: 2
+Maximum depth: 6
+0: "c"("c")- 
+1: "b"("c")-l "e"("c")-r 
+2: ="a"("b")-l ="d"("e")-l "f"("e")-r 
+3: "g"("f")-r 
+4: "h"("g")-r 
+5: ="i"("h")-r 
+
+Nodes: 9
+Words/Phrases: 9
+Minimum depth: 2
+Maximum depth: 6

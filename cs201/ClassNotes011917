@@ -1,0 +1,47 @@
+ASK PROFESSOR LUSTH ABOUT QUESTIONs:
+23
+48 Constant time?
+49 n^2?
+50 n^2?
+51 n^2?
+52 
+...
+55
+...
+61 constant?
+62 n?
+63 n?
+64 n?
+Space complexity
+Classic Recursive Fibonacci (time/space complexity)
+Iterative Actorial
+Iterative Fibonacci
+93
+94
+99
+122-132 Terminology of size, capacity, etc
+155-157 Why linear time?
+164 *
+171-179 Are push and pop ever more than constant? Same with the dequeue/enqueue
+190-192 Binary search tree info not available
+200 Degenerate?* When all the nodes are in 2 lines from the parent
+Explain the difference between complete and perfect?
+228
+262 Trinary Heap?
+
+Read up on traversals
+
+---------------------------------------------------------------
+
+Space complexity for loops: constant
+Space complexity for recursion: number of calls
+Two independent loops: the highest order loop
+Nested: multiply the complexities
+
+Dynamic arrays grow in linear time with additive, constant with multiplitive. 
+195 is D
+complete are perfect, perfect are not complete
+perfect are full,
+full are not complete
+complete are not full
+2^h-1 number of nodes for perfect tree

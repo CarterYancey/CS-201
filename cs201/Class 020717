@@ -1,0 +1,13 @@
+T92^0)=1
+T(2^n)=2T(2^(n-1)+2^n=(n+1)2^n
+base case: m=2^0 
+	by inspection: 1
+	by formula: (0+1)2^0 = 1
+ind. hyp: Assume true for 1<k<n
+ind. case: T(2^n)=2T(2^(n-1))+2^n
+ind. step: 2((n-1+1)2^(n-1))+2^n = 2n2^(n-1)+2^n=n*2^n+2^n=(n+1)2^n
+
+78) T(n) = 4T(n/4)+logn
+	case1: logn=O(n^(log4(4-E))=O(n^(1-E))
+
+46) 

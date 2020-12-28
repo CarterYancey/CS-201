@@ -1,0 +1,7 @@
+/home/carter/Desktop/cs201/assign3
+Tue Apr  4 12:11:54 CDT 2017
+binomial.c		 comparator.c  integer.c  rbt.c      scanner.h	vbst.c
+binomial.h		 comparator.h  integer.h  rbt.h      sll.c	vbst.h
+bst.c			 darray.c      Makefile   real.c     sll.h	WORKING
+bst.h			 darray.h      queue.c	  real.h     stack.c
+cdyancey@crimson.ua.edu  dijkstra.c    queue.h	  scanner.c  stack.h

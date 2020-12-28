@@ -1,0 +1,92 @@
+ch 4
+
+3 ways to go about divide and conquer:
+- master theorem (master method)
+	way of looking at this method is the way the book uses (not the ones on the web)
+- recursion tree
+	qs:
+	how much work is done at the jth level?
+ 	how many recursions are there at ... ?
+- substitution method
+
+strassen's method
+ - it's matrix multiplication
+ - figuring out T(n):
+   T(n) = 7T(n/2) + n^2
+   n^2 bc you're doing a constant number of n/2 * n/2 * ... = theta(n^2)
+ - that equation is called a recurrence equation that describes how our divide and conquer method works in terms of time
+
+
+ Using the master theorem:
+ - strassen's method
+   the master theorem can be used on it bc these things are true:
+     7 in 7T must be constant, and 2 in n/2 must be constant
+ - factorial: 1*T(n-1) + 1
+   there isn't a divisor so the master theorem can't be used on it
+ - master theorem has 3 cases:
+	Case 1. recursion dominates - you spend most of the time on the recursion part
+	Case 2. recursion and work are similar
+	Case 3. work dominates - the work at any level of the recursion dominates
+ - T(n) = 4T(n/2) + 1
+	here the recursion dominates, so it's case 1
+ - can make a guess about the time for the recursion by aT(n/b) + x: T(n) is approximately n^(log_b(a))
+ - strassen's method is case 1 by the same logic
+	n^2 = big omicron(n^(log_b(a-epsilon)))
+	this means n^2 is a polynomial difference (indicated by the epsilon) from n^...
+	so to figure this out: n^2 = big omicron(n^(log_b(a-epsilon))) = n^2 = big omicron(n^(2.8074-epsilon)))
+	letting epsilon be 0.8073 gives = n^(2.0001) which is indeed bigger than the LHS
+	this proves it for case 1
+	^ the goal of this is to find a positive epsilon for which this is true. if we can, then we can prove it by case 1
+ - binary search: T(n) = 1*T(n/2) + 1
+	T(n/2) for recursion, 1 for work
+	looks like the recursion dominates => case 1, looks like logn time for recursion, but it's not case 1.
+	1 = big omicron(n^log_2(1-epsilon)) = big omicron(n^(0-epsilon)) => can't be true. then it is not case 1
+	now we'll try case 2, where we want to show:
+	w = theta(n^(log_b(a)))
+	1 = theta(n^(0)) => 1 = theta(1) which proves it for case 2
+	thus for this example, T(n) = theta(n^(log_b(a))= * logn) = theta(logn) which was our initial guess, but it's not case 1
+ - T(n) = 2T(n/2) + n^2
+	guess is that it'll be n time for the recursion and n^2 time for the work at a level, we guess it's case 3
+	n^2 = big omega(n^(log_b(a)+epsilon)) => big omega(n^(1+epsilon))
+	letting epsilon = 0.5 gives us our desired true equation:
+	n^2 = big omega(n^1.5)
+	there's an extra test we have to do for case 3: the regularity condition
+	you have to find another constant to confirm it's case 3
+	the regularity condition: a*f(n/b) <= C*f(n) where C is a constant less than 1 and greater than 0, f is the work function (in this case n^2)
+	test for this example: 2*(n/2)^2 <= C*n^2 
+	=> n^2/2 <= C*n^2 => C >= 1/2 so choosing C=1/4 gives us our confirmation that this is indeed case 3
+	the regularity condition is checking that you're doing <= work at each lower level (master theorem can't be used if you do more work at lower levels)
+		this example: start at n^2, at the 2nd level you ahve n^2/4 + n^2/4 = n^2/2 which checks out 
+	this could happen (lower level work > higher level work) if you use cosine/sine, for example
+ - these *prove* that x is faster than y, whereas graphs, data points, etc. don't really prove it
+
+stooge sort:
+ - like the best parts of quicksort and the best parts of mergesort
+	quicksort: you don't have to write any more code to combine the 2 parts afterwards!
+	mergesort: there's not much setup - you just find the median value and recur
+ - stooge sort has trivial setup and you don't have to do work afterwards
+ - takes 3rds and detect base case is all the setup
+ - recur and stooge sort the lower 2/3, then come back and stooge sort the upper 2/3, then sort the lower 2/3 again, then done
+ - it'll be slower than quicksort or mergesort
+ - proving runtime:
+	T(n) = 3T(2n/3) + 1
+	a = 3, b = 3/2
+	it'll be more than linear since 3T(n/3) would be linear and it's more than that, so since we know work is constant we know we have case 1
+	1 = O(n^(log_b(a-epsilon))) = O(n^(log_1.5(3-epsilon))) = O(n^(2.7095-epsilon))
+	choosing epsilon=2 gives us our proof
+	so we have that T(n) = theta(n^2.7045)
+	almost cubic, so not that great runtime
+	if you can't find the epsilon?
+		T(n) = 3T(n/3) + n/(nlogn)
+		probably recurion is linear and work is sublinear, which means case 1
+		n/(logn) = O(n^(1-epsilon))
+		=> n = O(n^(1-epsilon) * logn)
+		choose epsilon=.01 or anything else tiny and you still have n = (smaller than n)logn which will never be
+		T(n) = theta(n) is true but we can't prove it using the master theorem since it's slower but not polynomially slower
+		this only works to show if it's polynomially slower
+	another example
+		T(n) = 3T(n/3) + 2^n
+		we're thinking case 3
+		2^n = big omega(n^(1+epsilon))
+		this is true always! 
+		check regularity condition: 3*2^(n/3) <= C*2^n we can find a constant here, so yep it's case 3

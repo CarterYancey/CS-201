@@ -1,0 +1,8 @@
+0: "now is the "("now is the ")-
+1: " time for "("now is the ")-l ="to pass their"("now is the ")-r
+2: " all good students "(" time for ")-l
+3: =" tests "(" all good students ")-r
+Words/Phrases: 5
+Nodes: 5
+Minimum depth: 2
+Maximum depth: 4

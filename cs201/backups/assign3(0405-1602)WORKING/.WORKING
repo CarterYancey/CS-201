@@ -1,0 +1,21 @@
+/home/carter/Desktop/cs201/assign3
+Wed Apr  5 16:01:34 CDT 2017
+backupdijstra.c		 g2.txt		  myOutTwo.txt	       rbt.c
+binomial.c		 g6.0		  myOutUnweighted.txt  rbt.h
+binomial.h		 g7.0		  od.txt	       README.md
+bst.c			 g8.0		  outG10.txt	       real.c
+bst.h			 g9.0		  outG11.txt	       real.h
+c1.txt			 integer.c	  outG12.txt	       scanner.c
+cdyancey@crimson.ua.edu  integer.h	  outG13.txt	       scanner.h
+comparator.c		 Makefile	  outG14.txt	       single.0
+comparator.h		 myOutG10.txt	  outG15.txt	       sll.c
+darray.c		 myOutG11.txt	  outG6.txt	       sll.h
+darray.h		 myOutG12.txt	  outG7.txt	       stack.c
+dijkstra.c		 myOutG13.txt	  outG8.txt	       stack.h
+g10.0			 myOutG14.txt	  outG9.txt	       two.0
+g11.0			 myOutG15.txt	  outSingle.txt        txt2.txt
+g12.0			 myOutG6.txt	  outTwo.txt	       txt.txt
+g13.0			 myOutG7.txt	  outUnweighted.txt    unweighted.0
+g14.0			 myOutG8.txt	  p3Testing	       vbst.c
+g15.0			 myOutG9.txt	  queue.c	       vbst.h
+g1.txt			 myOutSingle.txt  queue.h	       WORKING

@@ -1,0 +1,10 @@
+/home/carter/Desktop/cs201/assign1
+Tue Feb 14 09:45:23 CST 2017
+cdyancey@crimson.ua.edu  Makefile	 scanner.c	   testInteger2.txt
+comparator.c		 myResults.txt	 scanner.h	   testInteger3.txt
+comparator.h		 newResults.txt  sll.c		   testInteger4.txt
+dll.c			 queue.c	 sll.h		   testReal1.txt
+dll.h			 queue.h	 sqsort.c	   testReal2.txt
+integer.c		 real.c		 stack.c	   testString1.txt
+integer.h		 real.h		 stack.h	   testString2.txt
+items			 results.txt	 testInteger1.txt  WORKING

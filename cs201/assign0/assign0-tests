@@ -1,0 +1,1112 @@
+TEST #1
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(83));
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,0,newInteger(77));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,0,newInteger(93));
+    insertSLL(a,0,newInteger(35));
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,0,newInteger(49));
+    insertSLL(a,0,newInteger(21));
+    displaySLL(stdout,a);
+
+Expected output:
+[21,49,92,86,35,93,15,77,86,83]
+
+TEST #2
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,sizeSLL(a),newInteger(83));
+    insertSLL(a,sizeSLL(a),newInteger(86));
+    insertSLL(a,sizeSLL(a),newInteger(77));
+    insertSLL(a,sizeSLL(a),newInteger(15));
+    insertSLL(a,sizeSLL(a),newInteger(93));
+    insertSLL(a,sizeSLL(a),newInteger(35));
+    insertSLL(a,sizeSLL(a),newInteger(86));
+    insertSLL(a,sizeSLL(a),newInteger(92));
+    insertSLL(a,sizeSLL(a),newInteger(49));
+    insertSLL(a,sizeSLL(a),newInteger(21));
+    displaySLL(stdout,a);
+
+Expected output:
+[83,86,77,15,93,35,86,92,49,21]
+
+TEST #3
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(83));
+    insertSLL(a,1,newInteger(77));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(49));
+    insertSLL(a,1,newInteger(62));
+    insertSLL(a,4,newInteger(90));
+    insertSLL(a,6,newInteger(63));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,6,newInteger(72));
+    insertSLL(a,8,newInteger(11));
+    insertSLL(a,9,newInteger(67));
+    insertSLL(a,5,newInteger(82));
+    insertSLL(a,13,newInteger(62));
+    insertSLL(a,10,newInteger(67));
+    insertSLL(a,10,newInteger(29));
+    insertSLL(a,0,newInteger(22));
+    insertSLL(a,3,newInteger(69));
+    insertSLL(a,15,newInteger(93));
+    insertSLL(a,2,newInteger(11));
+    insertSLL(a,18,newInteger(29));
+    insertSLL(a,1,newInteger(21));
+    insertSLL(a,1,newInteger(84));
+    insertSLL(a,20,newInteger(98));
+    insertSLL(a,20,newInteger(15));
+    insertSLL(a,24,newInteger(13));
+    insertSLL(a,26,newInteger(91));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,0,newInteger(62));
+    insertSLL(a,1,newInteger(96));
+    insertSLL(a,21,newInteger(5));
+    insertSLL(a,7,newInteger(84));
+    insertSLL(a,20,newInteger(36));
+    insertSLL(a,5,newInteger(46));
+    insertSLL(a,7,newInteger(13));
+    insertSLL(a,27,newInteger(24));
+    insertSLL(a,19,newInteger(82));
+    insertSLL(a,13,newInteger(14));
+    insertSLL(a,23,newInteger(34));
+    insertSLL(a,30,newInteger(43));
+    displaySLL(stdout,a);
+
+Expected output:
+[62,96,22,84,21,46,40,13,11,84,86,69,62,14,49,56,83,82,90,72,82,93,11,34,29,36,67,67,5,93,43,24,63,15,98,29,77,13,62,91]
+
+TEST #4
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,3,newInteger(62));
+    insertSLL(a,3,newInteger(59));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,3,newInteger(36));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,8,newInteger(30));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,10,newInteger(2));
+    removeSLL(a,7);
+    removeSLL(a,3);
+    insertSLL(a,2,newInteger(11));
+    removeSLL(a,3);
+    removeSLL(a,2);
+    insertSLL(a,5,newInteger(37));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,2,newInteger(26));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,6,newInteger(70));
+    insertSLL(a,13,newInteger(5));
+    insertSLL(a,11,newInteger(27));
+    insertSLL(a,1,newInteger(46));
+    insertSLL(a,11,newInteger(57));
+    removeSLL(a,14);
+    removeSLL(a,14);
+    removeSLL(a,14);
+    insertSLL(a,5,newInteger(43));
+    insertSLL(a,12,newInteger(8));
+    displaySLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #5
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,3,newInteger(62));
+    insertSLL(a,3,newInteger(59));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,3,newInteger(36));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,8,newInteger(30));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,10,newInteger(2));
+    removeSLL(a,7);
+    removeSLL(a,3);
+    insertSLL(a,2,newInteger(11));
+    removeSLL(a,3);
+    removeSLL(a,2);
+    insertSLL(a,5,newInteger(37));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,2,newInteger(26));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,6,newInteger(70));
+    insertSLL(a,13,newInteger(5));
+    insertSLL(a,11,newInteger(27));
+    insertSLL(a,1,newInteger(46));
+    insertSLL(a,11,newInteger(57));
+    removeSLL(a,14);
+    removeSLL(a,14);
+    removeSLL(a,14);
+    insertSLL(a,5,newInteger(43));
+    insertSLL(a,12,newInteger(8));
+    displaySLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #6
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,3,newInteger(62));
+    insertSLL(a,3,newInteger(59));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,3,newInteger(36));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,8,newInteger(30));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,10,newInteger(2));
+    removeSLL(a,7);
+    removeSLL(a,3);
+    insertSLL(a,2,newInteger(11));
+    removeSLL(a,3);
+    removeSLL(a,2);
+    insertSLL(a,5,newInteger(37));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,2,newInteger(26));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,6,newInteger(70));
+    insertSLL(a,13,newInteger(5));
+    insertSLL(a,11,newInteger(27));
+    insertSLL(a,1,newInteger(46));
+    insertSLL(a,11,newInteger(57));
+    removeSLL(a,14);
+    removeSLL(a,14);
+    removeSLL(a,14);
+    insertSLL(a,5,newInteger(43));
+    insertSLL(a,12,newInteger(8));
+    displaySLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #7
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,3,newInteger(62));
+    insertSLL(a,3,newInteger(59));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,3,newInteger(36));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,8,newInteger(30));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,10,newInteger(2));
+    removeSLL(a,7);
+    removeSLL(a,3);
+    insertSLL(a,2,newInteger(11));
+    removeSLL(a,3);
+    removeSLL(a,2);
+    insertSLL(a,5,newInteger(37));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,2,newInteger(26));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,6,newInteger(70));
+    insertSLL(a,13,newInteger(5));
+    insertSLL(a,11,newInteger(27));
+    insertSLL(a,1,newInteger(46));
+    insertSLL(a,11,newInteger(57));
+    removeSLL(a,14);
+    removeSLL(a,14);
+    removeSLL(a,14);
+    insertSLL(a,5,newInteger(43));
+    insertSLL(a,12,newInteger(8));
+    displaySLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #8
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,1,newInteger(93));
+    insertSLL(a,0,newInteger(92));
+    insertSLL(a,3,newInteger(62));
+    insertSLL(a,3,newInteger(59));
+    insertSLL(a,0,newInteger(40));
+    insertSLL(a,3,newInteger(36));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,8,newInteger(30));
+    insertSLL(a,5,newInteger(67));
+    insertSLL(a,10,newInteger(2));
+    removeSLL(a,7);
+    removeSLL(a,3);
+    insertSLL(a,2,newInteger(11));
+    removeSLL(a,3);
+    removeSLL(a,2);
+    insertSLL(a,5,newInteger(37));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,2,newInteger(26));
+    insertSLL(a,9,newInteger(56));
+    insertSLL(a,6,newInteger(70));
+    insertSLL(a,13,newInteger(5));
+    insertSLL(a,11,newInteger(27));
+    insertSLL(a,1,newInteger(46));
+    insertSLL(a,11,newInteger(57));
+    removeSLL(a,14);
+    removeSLL(a,14);
+    removeSLL(a,14);
+    insertSLL(a,5,newInteger(43));
+    insertSLL(a,12,newInteger(8));
+    displaySLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #9
+    sll *a = newSLL(displayInteger);
+    sll *b = newSLL(displayInteger);
+    (inserting 100 random integers into list a at random locations)
+    (inserting 100 random integers into list b at random locations)
+    (unioning list a and list b, then b union a, 10000 times)
+    displaySLL(stdout,a);
+    displaySLL(stdout,b);
+
+Expected output:
+[62,96,34,22,37,96,3,40,84,86,21,46,32,40,70,13,35,11,88,59,97,40,84,46,27,86,69,64,67,28,65,62,14,76,95,6,49,56,32,83,34,26,1,21,54,76,82,90,72,9,31,82,43,93,11,39,34,29,36,67,52,67,5,24,97,28,43,93,58,97,43,32,24,79,94,19,87,63,81,74,41,67,75,15,18,98,8,29,77,29,13,93,62,17,18,91,87,3,86,44,32,5,2,22,28,21,54,19,82,69,50,79,22,87,5,60,20,98,9,73,90,97,24,24,60,84,26,44,93,62,36,6,21,73,30,8,27,39,81,52,0,61,61,79,90,21,84,55,40,20,76,79,13,26,70,25,45,42,22,11,24,99,68,72,48,59,44,36,42,44,22,99,43,48,79,72,6,33,13,94,46,42,17,4,84,76,59,19,78,99,96,40,5,98,90,4,69,92,40,13][]
+
+TEST #10
+    sll *a = newSLL(displayReal);
+    insertSLL(a,0,newReal(86.700000));
+    insertSLL(a,0,newReal(35.600000));
+    removeSLL(a,1);
+    insertSLL(a,1,newReal(27.000000));
+    insertSLL(a,0,newReal(26.000000));
+    insertSLL(a,0,newReal(36.100000));
+    removeSLL(a,1);
+    insertSLL(a,3,newReal(30.200000));
+    insertSLL(a,2,newReal(35.900000));
+    removeSLL(a,3);
+    insertSLL(a,1,newReal(67.300000));
+    insertSLL(a,3,newReal(42.900000));
+    removeSLL(a,5);
+    insertSLL(a,2,newReal(37.800000));
+    insertSLL(a,5,newReal(70.300000));
+    insertSLL(a,1,newReal(80.600000));
+    insertSLL(a,4,newReal(70.600000));
+    removeSLL(a,0);
+    insertSLL(a,8,newReal(27.600000));
+    insertSLL(a,7,newReal(29.300000));
+    removeSLL(a,5);
+    removeSLL(a,0);
+    insertSLL(a,5,newReal(67.400000));
+    removeSLL(a,5);
+    insertSLL(a,8,newReal(8.600000));
+    insertSLL(a,1,newReal(84.300000));
+    insertSLL(a,8,newReal(99.200000));
+    insertSLL(a,4,newReal(68.900000));
+    insertSLL(a,1,newReal(86.400000));
+    removeSLL(a,7);
+    displaySLL(stdout,a);
+
+Expected output:
+[67.300000,86.400000,84.300000,37.800000,70.600000,68.900000,35.600000,29.300000,35.900000,99.200000,27.600000,8.600000]
+
+TEST #11
+    sll *a = newSLL(displayInteger);
+    insertSLL(a,0,newInteger(83));
+    insertSLL(a,0,newInteger(86));
+    insertSLL(a,0,newInteger(77));
+    insertSLL(a,0,newInteger(15));
+    insertSLL(a,0,newInteger(93));
+    insertSLL(a,0,newInteger(35));
+    insertSLL(a,0,newInteger(86));
+    repeated 9993 times: insertSLL(a,0,newInteger(X));
+    repeated 10000 times: insertSLL(a,sizeSLL(a),newInteger(X));
+    repeated 19993 times: removeSLL(a,0,newInteger(X));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    removeSLL(a,0));
+    displaySLL(stdout,a);
+
+Expected output:
+[]
+
+TEST #12
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(83));
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,0,newInteger(77));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,0,newInteger(93));
+    insertDLL(a,0,newInteger(35));
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,0,newInteger(49));
+    insertDLL(a,0,newInteger(21));
+    displayDLL(stdout,a);
+
+Expected output:
+[21,49,92,86,35,93,15,77,86,83]
+
+TEST #13
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,sizeDLL(a),newInteger(83));
+    insertDLL(a,sizeDLL(a),newInteger(86));
+    insertDLL(a,sizeDLL(a),newInteger(77));
+    insertDLL(a,sizeDLL(a),newInteger(15));
+    insertDLL(a,sizeDLL(a),newInteger(93));
+    insertDLL(a,sizeDLL(a),newInteger(35));
+    insertDLL(a,sizeDLL(a),newInteger(86));
+    insertDLL(a,sizeDLL(a),newInteger(92));
+    insertDLL(a,sizeDLL(a),newInteger(49));
+    insertDLL(a,sizeDLL(a),newInteger(21));
+    displayDLL(stdout,a);
+
+Expected output:
+[83,86,77,15,93,35,86,92,49,21]
+
+TEST #14
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(83));
+    insertDLL(a,1,newInteger(77));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(49));
+    insertDLL(a,1,newInteger(62));
+    insertDLL(a,4,newInteger(90));
+    insertDLL(a,6,newInteger(63));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,6,newInteger(72));
+    insertDLL(a,8,newInteger(11));
+    insertDLL(a,9,newInteger(67));
+    insertDLL(a,5,newInteger(82));
+    insertDLL(a,13,newInteger(62));
+    insertDLL(a,10,newInteger(67));
+    insertDLL(a,10,newInteger(29));
+    insertDLL(a,0,newInteger(22));
+    insertDLL(a,3,newInteger(69));
+    insertDLL(a,15,newInteger(93));
+    insertDLL(a,2,newInteger(11));
+    insertDLL(a,18,newInteger(29));
+    insertDLL(a,1,newInteger(21));
+    insertDLL(a,1,newInteger(84));
+    insertDLL(a,20,newInteger(98));
+    insertDLL(a,20,newInteger(15));
+    insertDLL(a,24,newInteger(13));
+    insertDLL(a,26,newInteger(91));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,0,newInteger(62));
+    insertDLL(a,1,newInteger(96));
+    insertDLL(a,21,newInteger(5));
+    insertDLL(a,7,newInteger(84));
+    insertDLL(a,20,newInteger(36));
+    insertDLL(a,5,newInteger(46));
+    insertDLL(a,7,newInteger(13));
+    insertDLL(a,27,newInteger(24));
+    insertDLL(a,19,newInteger(82));
+    insertDLL(a,13,newInteger(14));
+    insertDLL(a,23,newInteger(34));
+    insertDLL(a,30,newInteger(43));
+    displayDLL(stdout,a);
+
+Expected output:
+[62,96,22,84,21,46,40,13,11,84,86,69,62,14,49,56,83,82,90,72,82,93,11,34,29,36,67,67,5,93,43,24,63,15,98,29,77,13,62,91]
+
+TEST #15
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,3,newInteger(62));
+    insertDLL(a,3,newInteger(59));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,3,newInteger(36));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,8,newInteger(30));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,10,newInteger(2));
+    removeDLL(a,7);
+    removeDLL(a,3);
+    insertDLL(a,2,newInteger(11));
+    removeDLL(a,3);
+    removeDLL(a,2);
+    insertDLL(a,5,newInteger(37));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,2,newInteger(26));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,6,newInteger(70));
+    insertDLL(a,13,newInteger(5));
+    insertDLL(a,11,newInteger(27));
+    insertDLL(a,1,newInteger(46));
+    insertDLL(a,11,newInteger(57));
+    removeDLL(a,14);
+    removeDLL(a,14);
+    removeDLL(a,14);
+    insertDLL(a,5,newInteger(43));
+    insertDLL(a,12,newInteger(8));
+    displayDLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #16
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,3,newInteger(62));
+    insertDLL(a,3,newInteger(59));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,3,newInteger(36));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,8,newInteger(30));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,10,newInteger(2));
+    removeDLL(a,7);
+    removeDLL(a,3);
+    insertDLL(a,2,newInteger(11));
+    removeDLL(a,3);
+    removeDLL(a,2);
+    insertDLL(a,5,newInteger(37));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,2,newInteger(26));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,6,newInteger(70));
+    insertDLL(a,13,newInteger(5));
+    insertDLL(a,11,newInteger(27));
+    insertDLL(a,1,newInteger(46));
+    insertDLL(a,11,newInteger(57));
+    removeDLL(a,14);
+    removeDLL(a,14);
+    removeDLL(a,14);
+    insertDLL(a,5,newInteger(43));
+    insertDLL(a,12,newInteger(8));
+    displayDLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #17
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,3,newInteger(62));
+    insertDLL(a,3,newInteger(59));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,3,newInteger(36));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,8,newInteger(30));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,10,newInteger(2));
+    removeDLL(a,7);
+    removeDLL(a,3);
+    insertDLL(a,2,newInteger(11));
+    removeDLL(a,3);
+    removeDLL(a,2);
+    insertDLL(a,5,newInteger(37));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,2,newInteger(26));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,6,newInteger(70));
+    insertDLL(a,13,newInteger(5));
+    insertDLL(a,11,newInteger(27));
+    insertDLL(a,1,newInteger(46));
+    insertDLL(a,11,newInteger(57));
+    removeDLL(a,14);
+    removeDLL(a,14);
+    removeDLL(a,14);
+    insertDLL(a,5,newInteger(43));
+    insertDLL(a,12,newInteger(8));
+    displayDLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #18
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,3,newInteger(62));
+    insertDLL(a,3,newInteger(59));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,3,newInteger(36));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,8,newInteger(30));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,10,newInteger(2));
+    removeDLL(a,7);
+    removeDLL(a,3);
+    insertDLL(a,2,newInteger(11));
+    removeDLL(a,3);
+    removeDLL(a,2);
+    insertDLL(a,5,newInteger(37));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,2,newInteger(26));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,6,newInteger(70));
+    insertDLL(a,13,newInteger(5));
+    insertDLL(a,11,newInteger(27));
+    insertDLL(a,1,newInteger(46));
+    insertDLL(a,11,newInteger(57));
+    removeDLL(a,14);
+    removeDLL(a,14);
+    removeDLL(a,14);
+    insertDLL(a,5,newInteger(43));
+    insertDLL(a,12,newInteger(8));
+    displayDLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #19
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,1,newInteger(93));
+    insertDLL(a,0,newInteger(92));
+    insertDLL(a,3,newInteger(62));
+    insertDLL(a,3,newInteger(59));
+    insertDLL(a,0,newInteger(40));
+    insertDLL(a,3,newInteger(36));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,8,newInteger(30));
+    insertDLL(a,5,newInteger(67));
+    insertDLL(a,10,newInteger(2));
+    removeDLL(a,7);
+    removeDLL(a,3);
+    insertDLL(a,2,newInteger(11));
+    removeDLL(a,3);
+    removeDLL(a,2);
+    insertDLL(a,5,newInteger(37));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,2,newInteger(26));
+    insertDLL(a,9,newInteger(56));
+    insertDLL(a,6,newInteger(70));
+    insertDLL(a,13,newInteger(5));
+    insertDLL(a,11,newInteger(27));
+    insertDLL(a,1,newInteger(46));
+    insertDLL(a,11,newInteger(57));
+    removeDLL(a,14);
+    removeDLL(a,14);
+    removeDLL(a,14);
+    insertDLL(a,5,newInteger(43));
+    insertDLL(a,12,newInteger(8));
+    displayDLL(stdout,a);
+
+Expected output:
+[15,46,40,26,92,43,93,67,70,67,37,62,8,57,56,27]
+
+TEST #20
+    dll *a = newDLL(displayInteger);
+    dll *b = newDLL(displayInteger);
+    (inserting 100 random integers into list a at random locations)
+    (inserting 100 random integers into list b at random locations)
+    (unioning list a and list b, then b union a, 10000 times)
+    displayDLL(stdout,a);
+    displayDLL(stdout,b);
+
+Expected output:
+[62,96,34,22,37,96,3,40,84,86,21,46,32,40,70,13,35,11,88,59,97,40,84,46,27,86,69,64,67,28,65,62,14,76,95,6,49,56,32,83,34,26,1,21,54,76,82,90,72,9,31,82,43,93,11,39,34,29,36,67,52,67,5,24,97,28,43,93,58,97,43,32,24,79,94,19,87,63,81,74,41,67,75,15,18,98,8,29,77,29,13,93,62,17,18,91,87,3,86,44,32,5,2,22,28,21,54,19,82,69,50,79,22,87,5,60,20,98,9,73,90,97,24,24,60,84,26,44,93,62,36,6,21,73,30,8,27,39,81,52,0,61,61,79,90,21,84,55,40,20,76,79,13,26,70,25,45,42,22,11,24,99,68,72,48,59,44,36,42,44,22,99,43,48,79,72,6,33,13,94,46,42,17,4,84,76,59,19,78,99,96,40,5,98,90,4,69,92,40,13][]
+
+TEST #21
+    dll *a = newDLL(displayReal);
+    insertDLL(a,0,newReal(86.700000));
+    insertDLL(a,0,newReal(35.600000));
+    removeDLL(a,1);
+    insertDLL(a,1,newReal(27.000000));
+    insertDLL(a,0,newReal(26.000000));
+    insertDLL(a,0,newReal(36.100000));
+    removeDLL(a,1);
+    insertDLL(a,3,newReal(30.200000));
+    insertDLL(a,2,newReal(35.900000));
+    removeDLL(a,3);
+    insertDLL(a,1,newReal(67.300000));
+    insertDLL(a,3,newReal(42.900000));
+    removeDLL(a,5);
+    insertDLL(a,2,newReal(37.800000));
+    insertDLL(a,5,newReal(70.300000));
+    insertDLL(a,1,newReal(80.600000));
+    insertDLL(a,4,newReal(70.600000));
+    removeDLL(a,0);
+    insertDLL(a,8,newReal(27.600000));
+    insertDLL(a,7,newReal(29.300000));
+    removeDLL(a,5);
+    removeDLL(a,0);
+    insertDLL(a,5,newReal(67.400000));
+    removeDLL(a,5);
+    insertDLL(a,8,newReal(8.600000));
+    insertDLL(a,1,newReal(84.300000));
+    insertDLL(a,8,newReal(99.200000));
+    insertDLL(a,4,newReal(68.900000));
+    insertDLL(a,1,newReal(86.400000));
+    removeDLL(a,7);
+    displayDLL(stdout,a);
+
+Expected output:
+[67.300000,86.400000,84.300000,37.800000,70.600000,68.900000,35.600000,29.300000,35.900000,99.200000,27.600000,8.600000]
+
+TEST #22
+    dll *a = newDLL(displayInteger);
+    insertDLL(a,0,newInteger(83));
+    insertDLL(a,0,newInteger(86));
+    insertDLL(a,0,newInteger(77));
+    insertDLL(a,0,newInteger(15));
+    insertDLL(a,0,newInteger(93));
+    insertDLL(a,0,newInteger(35));
+    insertDLL(a,0,newInteger(86));
+    repeated 9993 times: insertDLL(a,0,newInteger(X));
+    repeated 10000 times: insertDLL(a,sizeDLL(a),newInteger(X));
+    repeated 19993 times: removeDLL(a,0,newInteger(X));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    removeDLL(a,0));
+    displayDLL(stdout,a);
+
+Expected output:
+[]
+
+TEST #23
+    stack *a = newStack(displayInteger);
+    push(a,newInteger(83));
+    push(a,newInteger(86));
+    push(a,newInteger(77));
+    push(a,newInteger(15));
+    push(a,newInteger(93));
+    push(a,newInteger(35));
+    push(a,newInteger(86));
+    push(a,newInteger(92));
+    push(a,newInteger(49));
+    push(a,newInteger(21));
+    displayStack(stdout,a);
+
+Expected output:
+[21,49,92,86,35,93,15,77,86,83]
+
+TEST #24
+    stack *a = newStack(displayInteger);
+    push(a,newInteger(86));
+    pop(a,0);
+    push(a,newInteger(35));
+    push(a,newInteger(92));
+    pop(a,1);
+    push(a,newInteger(27));
+    push(a,newInteger(59));
+    push(a,newInteger(26));
+    pop(a,2);
+    push(a,newInteger(36));
+    push(a,newInteger(68));
+    pop(a,4);
+    push(a,newInteger(30));
+    push(a,newInteger(23));
+    push(a,newInteger(35));
+    push(a,newInteger(2));
+    pop(a,2);
+    push(a,newInteger(67));
+    push(a,newInteger(56));
+    push(a,newInteger(42));
+    pop(a,3);
+    pop(a,2);
+    push(a,newInteger(37));
+    push(a,newInteger(24));
+    push(a,newInteger(70));
+    push(a,newInteger(26));
+    push(a,newInteger(80));
+    push(a,newInteger(73));
+    push(a,newInteger(70));
+    push(a,newInteger(81));
+    displayStack(stdout,a);
+
+Expected output:
+[81,70,73,80,26,70,24,37,67,35,23,30,36,59,27,35]
+
+TEST #25
+    stack *a = newStack(displayInteger);
+    push(a,newInteger(86));
+    pop(a,0);
+    push(a,newInteger(35));
+    push(a,newInteger(92));
+    pop(a,1);
+    push(a,newInteger(27));
+    push(a,newInteger(59));
+    push(a,newInteger(26));
+    pop(a,2);
+    push(a,newInteger(36));
+    push(a,newInteger(68));
+    pop(a,4);
+    push(a,newInteger(30));
+    push(a,newInteger(23));
+    push(a,newInteger(35));
+    push(a,newInteger(2));
+    pop(a,2);
+    push(a,newInteger(67));
+    push(a,newInteger(56));
+    push(a,newInteger(42));
+    pop(a,3);
+    pop(a,2);
+    push(a,newInteger(37));
+    push(a,newInteger(24));
+    push(a,newInteger(70));
+    push(a,newInteger(26));
+    push(a,newInteger(80));
+    push(a,newInteger(73));
+    push(a,newInteger(70));
+    push(a,newInteger(81));
+    displayStack(stdout,a);
+
+Expected output:
+[81,70,73,80,26,70,24,37,67,35,23,30,36,59,27,35]
+
+TEST #26
+    stack *a = newStack(displayInteger);
+    push(a,newInteger(86));
+    pop(a,0);
+    push(a,newInteger(35));
+    push(a,newInteger(92));
+    pop(a,1);
+    push(a,newInteger(27));
+    push(a,newInteger(59));
+    push(a,newInteger(26));
+    pop(a,2);
+    push(a,newInteger(36));
+    push(a,newInteger(68));
+    pop(a,4);
+    push(a,newInteger(30));
+    push(a,newInteger(23));
+    push(a,newInteger(35));
+    push(a,newInteger(2));
+    pop(a,2);
+    push(a,newInteger(67));
+    push(a,newInteger(56));
+    push(a,newInteger(42));
+    pop(a,3);
+    pop(a,2);
+    push(a,newInteger(37));
+    push(a,newInteger(24));
+    push(a,newInteger(70));
+    push(a,newInteger(26));
+    push(a,newInteger(80));
+    push(a,newInteger(73));
+    push(a,newInteger(70));
+    push(a,newInteger(81));
+    displayStack(stdout,a);
+
+Expected output:
+[81,70,73,80,26,70,24,37,67,35,23,30,36,59,27,35]
+
+TEST #27
+    stack *a = newStack(displayInteger);
+    push(a,newInteger(86));
+    pop(a,0);
+    push(a,newInteger(35));
+    push(a,newInteger(92));
+    pop(a,1);
+    push(a,newInteger(27));
+    push(a,newInteger(59));
+    push(a,newInteger(26));
+    pop(a,2);
+    push(a,newInteger(36));
+    push(a,newInteger(68));
+    pop(a,4);
+    push(a,newInteger(30));
+    push(a,newInteger(23));
+    push(a,newInteger(35));
+    push(a,newInteger(2));
+    pop(a,2);
+    push(a,newInteger(67));
+    push(a,newInteger(56));
+    push(a,newInteger(42));
+    pop(a,3);
+    pop(a,2);
+    push(a,newInteger(37));
+    push(a,newInteger(24));
+    push(a,newInteger(70));
+    push(a,newInteger(26));
+    push(a,newInteger(80));
+    push(a,newInteger(73));
+    push(a,newInteger(70));
+    push(a,newInteger(81));
+    displayStack(stdout,a);
+
+Expected output:
+[81,70,73,80,26,70,24,37,67,35,23,30,36,59,27,35]
+
+TEST #28
+    stack *a = newStack(displayReal);
+    push(a,newReal(156.000000));
+    push(a,newReal(143.000000));
+    push(a,newReal(182.000000));
+    push(a,newReal(132.000000));
+    push(a,newReal(89.000000));
+    push(a,newReal(100.000000));
+    push(a,newReal(46.000000));
+    push(a,newReal(157.000000));
+    push(a,newReal(50.000000));
+    push(a,newReal(117.000000));
+    push(a,newReal(22.000000));
+    pop(a,7);
+    pop(a,3);
+    push(a,newReal(31.000000));
+    pop(a,3);
+    pop(a,2);
+    push(a,newReal(117.000000));
+    push(a,newReal(15.000000));
+    push(a,newReal(36.000000));
+    push(a,newReal(86.000000));
+    push(a,newReal(130.000000));
+    push(a,newReal(55.000000));
+    push(a,newReal(87.000000));
+    push(a,newReal(136.000000));
+    push(a,newReal(97.000000));
+    pop(a,14);
+    pop(a,14);
+    pop(a,14);
+    push(a,newReal(43.000000));
+    push(a,newReal(68.000000));
+    displayStack(stdout,a);
+
+Expected output:
+[68.000000,43.000000,55.000000,130.000000,86.000000,36.000000,15.000000,117.000000,157.000000,46.000000,100.000000,89.000000,132.000000,182.000000,143.000000,156.000000]
+
+TEST #29
+    stack *a = newStack(displayReal);
+    repeat 30000 times: push(a,newReal(X));
+    repeat 30000 times: pop(a);
+    displayStack(stdout,a);
+
+Expected output:
+[]
+
+TEST #30
+    queue *a = newQueue(displayInteger);
+    enqueue(a,newInteger(83));
+    enqueue(a,newInteger(86));
+    enqueue(a,newInteger(77));
+    enqueue(a,newInteger(15));
+    enqueue(a,newInteger(93));
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(86));
+    enqueue(a,newInteger(92));
+    enqueue(a,newInteger(49));
+    enqueue(a,newInteger(21));
+    displayQueue(stdout,a);
+
+Expected output:
+[83,86,77,15,93,35,86,92,49,21]
+
+TEST #31
+    queue *a = newQueue(displayInteger);
+    enqueue(a,newInteger(86));
+    dequeue(a,0);
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(92));
+    dequeue(a,1);
+    enqueue(a,newInteger(27));
+    enqueue(a,newInteger(59));
+    enqueue(a,newInteger(26));
+    dequeue(a,2);
+    enqueue(a,newInteger(36));
+    enqueue(a,newInteger(68));
+    dequeue(a,4);
+    enqueue(a,newInteger(30));
+    enqueue(a,newInteger(23));
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(2));
+    dequeue(a,2);
+    enqueue(a,newInteger(67));
+    enqueue(a,newInteger(56));
+    enqueue(a,newInteger(42));
+    dequeue(a,3);
+    dequeue(a,2);
+    enqueue(a,newInteger(37));
+    enqueue(a,newInteger(24));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(26));
+    enqueue(a,newInteger(80));
+    enqueue(a,newInteger(73));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(81));
+    displayQueue(stdout,a);
+
+Expected output:
+[68,30,23,35,2,67,56,42,37,24,70,26,80,73,70,81]
+
+TEST #32
+    queue *a = newQueue(displayInteger);
+    enqueue(a,newInteger(86));
+    dequeue(a,0);
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(92));
+    dequeue(a,1);
+    enqueue(a,newInteger(27));
+    enqueue(a,newInteger(59));
+    enqueue(a,newInteger(26));
+    dequeue(a,2);
+    enqueue(a,newInteger(36));
+    enqueue(a,newInteger(68));
+    dequeue(a,4);
+    enqueue(a,newInteger(30));
+    enqueue(a,newInteger(23));
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(2));
+    dequeue(a,2);
+    enqueue(a,newInteger(67));
+    enqueue(a,newInteger(56));
+    enqueue(a,newInteger(42));
+    dequeue(a,3);
+    dequeue(a,2);
+    enqueue(a,newInteger(37));
+    enqueue(a,newInteger(24));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(26));
+    enqueue(a,newInteger(80));
+    enqueue(a,newInteger(73));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(81));
+    displayQueue(stdout,a);
+
+Expected output:
+[68,30,23,35,2,67,56,42,37,24,70,26,80,73,70,81]
+
+TEST #33
+    queue *a = newQueue(displayInteger);
+    enqueue(a,newInteger(86));
+    dequeue(a,0);
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(92));
+    dequeue(a,1);
+    enqueue(a,newInteger(27));
+    enqueue(a,newInteger(59));
+    enqueue(a,newInteger(26));
+    dequeue(a,2);
+    enqueue(a,newInteger(36));
+    enqueue(a,newInteger(68));
+    dequeue(a,4);
+    enqueue(a,newInteger(30));
+    enqueue(a,newInteger(23));
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(2));
+    dequeue(a,2);
+    enqueue(a,newInteger(67));
+    enqueue(a,newInteger(56));
+    enqueue(a,newInteger(42));
+    dequeue(a,3);
+    dequeue(a,2);
+    enqueue(a,newInteger(37));
+    enqueue(a,newInteger(24));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(26));
+    enqueue(a,newInteger(80));
+    enqueue(a,newInteger(73));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(81));
+    displayQueue(stdout,a);
+
+Expected output:
+[68,30,23,35,2,67,56,42,37,24,70,26,80,73,70,81]
+
+TEST #34
+    queue *a = newQueue(displayInteger);
+    enqueue(a,newInteger(86));
+    dequeue(a,0);
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(92));
+    dequeue(a,1);
+    enqueue(a,newInteger(27));
+    enqueue(a,newInteger(59));
+    enqueue(a,newInteger(26));
+    dequeue(a,2);
+    enqueue(a,newInteger(36));
+    enqueue(a,newInteger(68));
+    dequeue(a,4);
+    enqueue(a,newInteger(30));
+    enqueue(a,newInteger(23));
+    enqueue(a,newInteger(35));
+    enqueue(a,newInteger(2));
+    dequeue(a,2);
+    enqueue(a,newInteger(67));
+    enqueue(a,newInteger(56));
+    enqueue(a,newInteger(42));
+    dequeue(a,3);
+    dequeue(a,2);
+    enqueue(a,newInteger(37));
+    enqueue(a,newInteger(24));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(26));
+    enqueue(a,newInteger(80));
+    enqueue(a,newInteger(73));
+    enqueue(a,newInteger(70));
+    enqueue(a,newInteger(81));
+    displayQueue(stdout,a);
+
+Expected output:
+[68,30,23,35,2,67,56,42,37,24,70,26,80,73,70,81]
+
+TEST #35
+    queue *a = newQueue(displayReal);
+    enqueue(a,newReal(156.000000));
+    enqueue(a,newReal(143.000000));
+    enqueue(a,newReal(182.000000));
+    enqueue(a,newReal(132.000000));
+    enqueue(a,newReal(89.000000));
+    enqueue(a,newReal(100.000000));
+    enqueue(a,newReal(46.000000));
+    enqueue(a,newReal(157.000000));
+    enqueue(a,newReal(50.000000));
+    enqueue(a,newReal(117.000000));
+    enqueue(a,newReal(22.000000));
+    dequeue(a,7);
+    dequeue(a,3);
+    enqueue(a,newReal(31.000000));
+    dequeue(a,3);
+    dequeue(a,2);
+    enqueue(a,newReal(117.000000));
+    enqueue(a,newReal(15.000000));
+    enqueue(a,newReal(36.000000));
+    enqueue(a,newReal(86.000000));
+    enqueue(a,newReal(130.000000));
+    enqueue(a,newReal(55.000000));
+    enqueue(a,newReal(87.000000));
+    enqueue(a,newReal(136.000000));
+    enqueue(a,newReal(97.000000));
+    dequeue(a,14);
+    dequeue(a,14);
+    dequeue(a,14);
+    enqueue(a,newReal(43.000000));
+    enqueue(a,newReal(68.000000));
+    displayQueue(stdout,a);
+
+Expected output:
+[157.000000,50.000000,117.000000,22.000000,31.000000,117.000000,15.000000,36.000000,86.000000,130.000000,55.000000,87.000000,136.000000,97.000000,43.000000,68.000000]
+
+TEST #36
+    queue *a = newQueue(displayReal);
+    repeat 30000 times: enqueue(a,newReal(X));
+    repeat 30000 times: dequeue(a);
+    displayQueue(stdout,a);
+
+Expected output:
+[]
